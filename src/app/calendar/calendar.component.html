@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="selectMonth">
+                <mat-form-field appearance="fill">
+                    <mat-label>Select Month</mat-label>
+                    <mat-select [(ngModel)] = "selectedMonth" (ngModelChange)="populateCalendar()">
+                        <mat-option *ngFor="let month of months" [value]="month">
+                            {{month}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="createAppointment">
+                <button mat-flat-button color="primary" (click)="openNewAppointmentDialog()">Create Appointment</button>
+            </div>
+        </div>
+        <div class="calendar">
+            <div class="weekdays">
+                <div class="day" *ngFor="let day of weekdays">
+                    {{day}}
+                </div>
+            </div>
+            <div id="daysContainer">
+                <div *ngFor="let data of monthData" class="daySquareContainer">
+                    <div class="daySquare">
+                        <div class="date">
+                            {{data.date}}
+                        </div>
+                        <div *ngFor="let appointment of data.appointmentList" class="appointmentList">
+                            <a href="#">{{appointment.firstName}}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

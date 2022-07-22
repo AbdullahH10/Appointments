@@ -1,0 +1,98 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 1080px;
+    height: 900px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    padding: 15px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.selectMonth{
+    align-self: center;
+}
+
+.createAppointment{
+    align-self: stretch;
+}
+
+.calendar{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.weekdays{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.day{
+    display: flex;
+    font-size: medium;
+    color: aliceblue;
+    width: 150px;
+    justify-content: center;
+}
+
+#daysContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+}
+
+.daySquareContainer{
+    display: flex;
+    height: 150px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.daySquare{
+    background-color: white;
+    border-radius: 10px;
+    height: 130px;
+    width: 130px;
+}
+
+.date{
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    font-size: xx-large;
+    color: lightseagreen;
+    padding: 10px;
+}
+
+.appointmentList{
+    color: purple;
+    font-size: medium;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+a{
+    color: purple;
+    text-decoration: none;
+}

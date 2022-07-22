@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="appointmentFormContainer">
+        <h1 mat-dialog-title>Create New Appointment</h1>
+        <div mat-dialog-content>
+            <mat-form-field appearance="outline">
+                <mat-label>First Name</mat-label>
+                <input matInput [(ngModel)]="firstName">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Last Name</mat-label>
+                <input matInput [(ngModel)]="lastName">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput [(ngModel)]="email">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Gender</mat-label>
+                <mat-select [(ngModel)]="gender">
+                    <mat-option value="Male">Male</mat-option>
+                    <mat-option value="Female">Female</mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Age</mat-label>
+                <input type="number" matInput [(ngModel)]="age">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Date</mat-label>
+                <input matInput [(ngModel)]="date" placeholder="DD/M/YYYY">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Time</mat-label>
+                <input matInput [(ngModel)]="time" placeholder="HH:MM AM/PM">
+            </mat-form-field>
+        </div>
+        <div mat-dialog-actions>
+            <button mat-button (click)="cancel()">No Thanks</button>
+            <button mat-flat-button color="primary" (click)="saveAppointment()" cdkFocusInitial>Ok</button>
+        </div>
+    </div>
+</body>
+
+</html>
