@@ -1,6 +1,7 @@
 import { MatDialog } from '@angular/material/dialog';
 import { Component, OnInit } from '@angular/core';
 import { NewAppointmentComponent } from '../new-appointment/new-appointment.component';
+import { ShowAppointmentComponent } from '../show-appointment/show-appointment.component';
 
 export interface Appointment {
   firstName: string,
@@ -114,5 +115,14 @@ export class CalendarComponent implements OnInit {
         })
       }
     }
+  }
+
+  openShowAppointmentDialog(): void {
+    this.dialog.open(ShowAppointmentComponent, {
+      width: '500px',
+      data: {
+
+      }
+    })
   }
 }

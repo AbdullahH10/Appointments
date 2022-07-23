@@ -11,12 +11,14 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
 import { NewAppointmentComponent } from './new-appointment/new-appointment.component';
 import {MatInputModule} from '@angular/material/input';
+import { ShowAppointmentComponent } from './show-appointment/show-appointment.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CalendarComponent,
-    NewAppointmentComponent
+    NewAppointmentComponent,
+    ShowAppointmentComponent
   ],
   imports: [
     BrowserModule,

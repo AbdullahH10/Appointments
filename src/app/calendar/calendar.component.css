@@ -88,11 +88,15 @@ body{
     color: purple;
     font-size: medium;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 10px;
+    justify-content: start;
+    padding-left: 15px;
 }
 
 a{
     color: purple;
     text-decoration: none;
+}
+
+a:hover{
+    cursor: pointer;
 }

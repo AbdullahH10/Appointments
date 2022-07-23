@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="showAppointmentContainr">
+        <h1 mat-dialog-title>Show Appointment Details</h1>
+        <div mat-dialog-content>
+            <mat-form-field appearance="outline">
+                <mat-label>First Name</mat-label>
+                <input matInput disabled="true" placeholder="Data">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Last Name</mat-label>
+                <input matInput disabled="true" placeholder="Data">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput disabled="true" placeholder="Data">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Gender</mat-label>
+                <input matInput disabled="true" placeholder="Data">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Age</mat-label>
+                <input disabled="true" placeholder="Data">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Date</mat-label>
+                <input matInput disabled="true" placeholder="Data">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Time</mat-label>
+                <input matInput disabled="true" placeholder="Data">
+            </mat-form-field>
+        </div>
+        <div mat-dialog-actions>
+            <button mat-button (click)="close()" cdkFocusInitial>Close</button>
+        </div>
+
+    </div>
+</body>
+
+</html>

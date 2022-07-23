@@ -35,8 +35,10 @@
                         <div class="date">
                             {{data.date}}
                         </div>
-                        <div *ngFor="let appointment of data.appointmentList" class="appointmentList">
-                            <a href="#">{{appointment.firstName}}</a>
+                        <div class="appointmentList">
+                            <a *ngFor="let appointment of data.appointmentList" (click)="openShowAppointmentDialog()">
+                                {{appointment.firstName}}<br/>
+                            </a>
                         </div>
                     </div>
                 </div>
