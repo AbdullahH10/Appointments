@@ -4,15 +4,16 @@ body{
     align-items: center;
 }
 .container{
-    width: 1080px;
-    height: 900px;
+    margin-top: 25px;
+    width: 720px;
+    height: 720px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
 }
 
 .header{
-    padding: 15px;
+    padding: 10px;
     height: fit-content;
     display: flex;
     flex-direction: row;
@@ -31,7 +32,7 @@ body{
 .calendar{
     display: flex;
     flex-direction: column;
-    padding: 15px;
+    padding: 10px;
 }
 
 .weekdays{
@@ -40,14 +41,14 @@ body{
     height: fit-content;
     width: 100%;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .day{
     display: flex;
     font-size: medium;
     color: aliceblue;
-    width: 150px;
+    width: 100px;
     justify-content: center;
 }
 
@@ -61,8 +62,8 @@ body{
 
 .daySquareContainer{
     display: flex;
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     justify-content: center;
     align-items: center;
 }
@@ -70,8 +71,8 @@ body{
 .daySquare{
     background-color: white;
     border-radius: 10px;
-    height: 130px;
-    width: 130px;
+    height: 80px;
+    width: 80px;
 }
 
 .date{
@@ -79,7 +80,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: end;
-    font-size: xx-large;
+    font-size: large;
     color: lightseagreen;
     padding: 10px;
 }
@@ -89,7 +90,7 @@ body{
     font-size: medium;
     flex-direction: column;
     justify-content: start;
-    padding-left: 15px;
+    padding-left: 10px;
 }
 
 a{
