@@ -87,7 +87,7 @@ body{
 
 .appointmentList{
     color: purple;
-    font-size: medium;
+    font-size: small;
     flex-direction: column;
     justify-content: start;
     padding-left: 10px;

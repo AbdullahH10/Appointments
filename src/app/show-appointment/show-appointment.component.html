@@ -12,40 +12,36 @@
     <div class="showAppointmentContainr">
         <h1 mat-dialog-title>Show Appointment Details</h1>
         <div mat-dialog-content>
-            <mat-form-field appearance="outline">
-                <mat-label>First Name</mat-label>
-                <input matInput disabled="true" placeholder="Data">
-            </mat-form-field>
-
-            <mat-form-field appearance="outline">
-                <mat-label>Last Name</mat-label>
-                <input matInput disabled="true" placeholder="Data">
-            </mat-form-field>
-
-            <mat-form-field appearance="outline">
-                <mat-label>Email</mat-label>
-                <input matInput disabled="true" placeholder="Data">
-            </mat-form-field>
-
-            <mat-form-field appearance="outline">
-                <mat-label>Gender</mat-label>
-                <input matInput disabled="true" placeholder="Data">
-            </mat-form-field>
-
-            <mat-form-field appearance="outline">
-                <mat-label>Age</mat-label>
-                <input disabled="true" placeholder="Data">
-            </mat-form-field>
-
-            <mat-form-field appearance="outline">
-                <mat-label>Date</mat-label>
-                <input matInput disabled="true" placeholder="Data">
-            </mat-form-field>
-
-            <mat-form-field appearance="outline">
-                <mat-label>Time</mat-label>
-                <input matInput disabled="true" placeholder="Data">
-            </mat-form-field>
+            <div class="appointmentDetailContainer">
+                <div class="firstName">
+                    <label for="firstName">First Name:</label>
+                    <p id="firstName"> </p>
+                </div>
+                <div class="lastName">
+                    <label for="lastName">Last Name:</label>
+                    <p id="lastName"></p>
+                </div>
+                <div class="email">
+                    <label for="email">Email:</label>
+                    <p id="email"></p>
+                </div>
+                <div class="gender">
+                    <label for="gender">Gender:</label>
+                    <p id="gender"></p>
+                </div>
+                <div class="age">
+                    <label for="age">Age:</label>
+                    <p id="age"></p>
+                </div>
+                <div class="date">
+                    <label for="date">Date:</label>
+                    <p id="date"></p>
+                </div>
+                <div class="time">
+                    <label for="time">Time:</label>
+                    <p id="time"></p>
+                </div>
+            </div>
         </div>
         <div mat-dialog-actions>
             <button mat-button (click)="close()" cdkFocusInitial>Close</button>
